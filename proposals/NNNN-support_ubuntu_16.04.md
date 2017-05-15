@@ -3,7 +3,7 @@
 * Proposal: [SDL-NNNN](NNNN-support_ubuntu_16.04.md)
 * Author: [Alexander Kutsan](https://github.com/LuxoftAKutsan)
 * Status: **Awaiting review**
-* Impacted Platforms: [Core / iOS / Android / Web / RPC / Protocol]
+* Impacted Platforms: [Core]
 
 ## Introduction
 
