@@ -21,7 +21,7 @@ When an Ubuntu release reaches its “end of life” it receives no further main
 
 ## Proposed solution
 
-Freezing Ubuntu **14.04** as default version for SDL would make support and testing much easier, resulting in reduction count of problems that contributors and integrators faced with working with SDL. Also in scope of freezing version of Ubuntu should be identified, described and frozen all dependencies for building SDL like compiler, build system, libc, and 3rd party libraries.
+Freezing Ubuntu 16.04 as default version for SDL would make support and testing much easier, resulting in reduction count of problems that contributors and integrators faced with working with SDL. Also in scope of freezing version of Ubuntu should be identified, described and frozen all dependencies for building SDL like compiler, build system, libc, and 3rd party libraries.
 
 The proposed solution is to use default package versions in Ubuntu 16.04:
 Compiler: 5.3.1 
