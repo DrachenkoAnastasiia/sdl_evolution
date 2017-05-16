@@ -13,11 +13,11 @@ This proposal is to use actual stable version of Ubuntu - 16.04, instead of Ubun
  
 SDL build system is configured on Ubuntu as the default system for developing and checking functionality.
 There is bunch of scripts for preparing clear Ubuntu environment for developing SDL or regression testing.
-Current actual stable version is Ubuntu 16.04. It will be supported until 2019Y. Also Ubuntu 16.04 is most popular Ubuntu version for desktop now.
+Current actual stable version is Ubuntu 16.04. It will be supported until 2019Y. 
 
 ## Motivation
 
-When an Ubuntu release reaches its “end of life” it receives no further maintenance updates, including critical security upgrades. To prevent any kind of risks, which could be caused by using unsupported Ubuntu version, we highly motivated to start use as default system the new one – 16.04.
+When an Ubuntu release reaches its “end of life” it receives no further maintenance updates, including critical security upgrades. To prevent any kind of risks, which could be caused by using unsupported Ubuntu version, we highly motivated to start use as default system the new one – 16.04. Also Ubuntu 16.04 is most popular Ubuntu version for desktop now.
 
 ## Proposed solution
 
@@ -40,7 +40,8 @@ Unification of environment will:
 ## Impact on existing code
 
 Some environment scripts should be changed. 
-Possible small fixes in some parts of code to avoid warning and errors newer version of compiler.
+Possible small fixes in some parts of code to avoid warning and errors newer version of compiler.   
+It would be used only those features, which are supported by compilers of given system. So it will not effected on integration of [QNX SDK 6.5](https://github.com/smartdevicelink/sdl_evolution/blob/master/proposals/0043-upgrade-c%2B%2B-standard.md).
 
 ## Alternatives considered
 
