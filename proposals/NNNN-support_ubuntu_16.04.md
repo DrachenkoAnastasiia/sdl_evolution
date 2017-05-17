@@ -7,7 +7,11 @@
 
 ## Introduction
 
-This proposal is to use actual stable version of Ubuntu - 16.04, instead of Ubuntu 14.04. Terms of hardware support of last one [is already finished](https://wiki.ubuntu.com/Releases?_ga=2.3494576.1830877159.1494597768-585859595.1491489263). SDL build system is configured on Ubuntu as the default system for developing and checking functionality.
+This proposal is to use actual stable version of Ubuntu - 16.04, instead of Ubuntu 14.04. Terms of hardware support of last one [is already finished](https://wiki.ubuntu.com/Releases?_ga=2.3494576.1830877159.1494597768-585859595.1491489263). 
+
+![Ubuntu16.4v](../assets/Ubuntu16.04v.jpg)
+
+SDL build system is configured on Ubuntu as the default system for developing and checking functionality.
 There is bunch of scripts for preparing clear Ubuntu environment for developing SDL or regression testing.
 Current actual stable version is Ubuntu 16.04. It will be supported until 2019Y. 
 
