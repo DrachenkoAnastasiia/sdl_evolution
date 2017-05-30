@@ -28,12 +28,13 @@ The proposed solution is to designed _SDL architecture_ to keep in focus followi
 
 
 ## Detailed design
-There is a set of components that should take a central place in our future architecture: Device, Connection, Session and Service. Besides, we need two additional components that would be responsible for receiving data from mobile transport (MobileAdapter) and sending data to HMI (HmiAdapter). Cooperation between all these new components could be approximately described with next scheme:
-![scheme_of_arch](./../nnnn-open_sdl_refactoring/assets/scheme_of_new_architecture.png)   
+There is a set of components that should take a central place in our future architecture: Device, Connection, Session and Service. Besides, we need two additional components that would be responsible for receiving data from mobile transport (MobileAdapter) and sending data to HMI (HmiAdapter). Cooperation between all these new components could be approximately described with next scheme:   
+![scheme_of_arch](../../nnnn-open_sdl_refactoring/assets/scheme_of_new_architecture.png)   
 (arrows mean message transferring between components)
 
-As an example, we can take a look to the scheme illustrates existing dependencies between _SDL_ components (illustration is very rough and given with only purpose to illustrate differences between two architectural approaches)
-![differences_between_two_architectural_approaches](./../nnnn-open_sdl_refactoring/assets/differences_between_arch_approaches.png)
+As an example, we can take a look to the scheme illustrates existing dependencies between _SDL_ components (illustration is very rough and given with only purpose to illustrate differences between two architectural approaches)   
+
+![differences_between_two_architectural_approaches](../../nnnn-open_sdl_refactoring/assets/differences_between_arch_approaches.png)
 
 ## Impact on existing code
 
@@ -41,6 +42,4 @@ Potentially, we can face with the situation when one of the components will requ
 
 ## Alternatives considered
 
-An alternative considered would 
-A few alternatives were considered. First is to leave it as is
-The two other alternatives are continuing the way it is and completely removing. 
+An considered alternative considered is to leave it as is.
