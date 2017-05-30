@@ -20,12 +20,15 @@ The important objective is to make interfaces between such components maximally 
 
 ## Proposed solution
 
-The proposed solution is to designed _SDL architecture_ to keep in focus following components and communications between them:
+The proposed solution is to design _SDL architecture_ to keep in focus a common concept of SDL components and communications between them:
 - Device (physical mobile device connected to SDL using one of supported transports)
 - Connection (each device could have multiple connections through different transports*)
 - Session (each connection could contain multiple sessions. In terms of HMI session is equal to application*)
 - Service (each session could contain multiple services. For example audio, video, RPC services, etc.*)
+ 
+Each component has quite strictly defined functionality. For example, **Connection** is responsible for **Sessions** creation / destroying, transferring (or not transferring) messages from **Device** to some particular **Session** depending on somehow predefined set of rules (could depend on certain implementation). Similarly, we can formulate rules of the "behavior" for all other components (for example, **Session** could be responsible for “heart beat” messages processing or messages frequency calculating and analyzing). Thus, each component encapsulates some specific part of application logic. Since we have such clear boundaries of components behavior and responsibility we’re able to reduce components interfaces to only interface for messages transferring. In other words, we can just use «Observer» pattern only to communicate between components. Of course, messages that would come into, for example, **Connection** and **Service** should be different and have different types because these components are responsible for processing different kinds of data.
 
+![common](../../nnnn-open_sdl_refactoring/assets/common.png)
 
 ## Detailed design
 There is a set of components that should take a central place in our future architecture: Device, Connection, Session and Service. Besides, we need two additional components that would be responsible for receiving data from mobile transport (MobileAdapter) and sending data to HMI (HmiAdapter). Cooperation between all these new components could be approximately described with next scheme:   
